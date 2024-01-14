@@ -17,6 +17,18 @@ const MainPage = (props) => {
     }
   };
 
+  const renderValue = (theVal, theDisplay) => {
+    if (theDisplay === "link") {
+      return (
+        <a href={theVal} target="_blank">
+          {formatValue(theVal)}
+        </a>
+      );
+    } else {
+      return <p>{formatValue(theVal)}</p>;
+    }
+  };
+
   const handleCopyMsg = (theName, theValue) => {
     setCopyMsg(`COPIED ${theName}: ${theValue}`);
   };
@@ -28,7 +40,11 @@ const MainPage = (props) => {
           <div className="info-field">
             <h3>{item.name}</h3>
             <span>
-              {item.value ? <p>{formatValue(item.value)}</p> : <i>Not Added</i>}
+              {item.value ? (
+                renderValue(item.value, item.displayType)
+              ) : (
+                <i>Not Added</i>
+              )}
               {item.value && (
                 <CopyToClipboard
                   text={item.value}
