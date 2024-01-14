@@ -1,0 +1,42 @@
+.form-page {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-fields p {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(158, 158, 158);
+    margin: 0px 0px 4px 0px;
+
+}
+
+.form-fields input {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(173, 173, 252);
+    border-radius: 12px;
+    font-size: 12px;
+    height: 24px;
+    padding-left: 12px;
+}
+
+.form-fields input:focus {
+    border: 2px solid rgb(146, 146, 255);
+}
+
+.btn-cx {
+    padding: 8px 12px;
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 8px;
+    border: none;
+    background: rgb(112, 112, 249);
+    color: #ffffff;
+}
+
+.btn-cx:hover {
+    background: rgb(61, 61, 178);
+}

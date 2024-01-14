@@ -1,0 +1,64 @@
+.main-page {
+    position: relative;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:8px;
+}
+
+.info-field h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(158, 158, 158);
+
+}
+
+.info-field span {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.info-field span p {
+    font-size: 14px;
+    color: #1d1d1d;
+}
+
+.edit-btn-cx {
+    position: absolute;
+    position: absolute;
+    top: -24px;
+    right: -6px;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.edit-btn-cx span {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: rgb(112, 112, 249);
+}
+
+.msg-cx {
+    padding: 8px 12px;
+    width: fit-content;
+    margin: 0px auto;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid green;
+    border-radius:8px;
+    color: green;
+    background: rgb(187, 239, 187);
+}
+

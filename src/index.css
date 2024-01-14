@@ -1,0 +1,28 @@
+body {
+    width: 350px;
+    height: 450px;
+}
+
+.container {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.title-cx {
+    width: 100%;
+}
+
+.title-cx h1 {
+    font-size: 24px;
+    color: #FE1C1C;
+    margin: 0px 0px 4px 0px;
+}
+
+.title-cx p {
+    font-size: 14px;
+    color: rgb(158, 158, 158);
+    margin: 0px;
+}
